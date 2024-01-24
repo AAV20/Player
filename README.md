@@ -1,70 +1,30 @@
-# Getting Started with Create React App
+# Music Player Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## The Structure of The Component
 
-## Available Scripts
+**Player Component**
 
-In the project directory, you can run:
+  + Player Header Component
+    + Play All Button
+     + Add All Button
+     + Track Number Button
+     + Filter Field
++ Song list Component
+   + Song row Component
++ Upload Music Form Component
+  + Upload Button
+  + Choose File Button
+    
+## The State Management Approach
 
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+In this code the state management approach is primarily based on the usage of the '**useState**' hook to manage the state of the '**trackList**' array. The '**trackList**' array represents the list of songs, and its state is updated using the '**setTrackList**' function.
++ **State Initialization**:The trackList state is initialized using the useState hook, and it contains an array of objects representing each track with properties such as id, src, and isPlaying.
++ **Updating State**: The play function is used to update the isPlaying property of the trackList state. It uses the setTrackList function to update the state based on the trackId. It also includes logic for playing/pausing audio, although the actual implementation is not provided.
++ **Rendering Based on State**: The component renders based on the state of trackList. It maps over the trackList array and displays various details for each track, such as song name, artist name, track number, and icons, using the find method to retrieve information from corresponding arrays (songNames, artistName, and track).
+## Steps to Follow to Run the Application Locally
++ Install Node.js along with npm on your machine
++ Set Up a New React Application by opening a terminal or command prompt and running the following command to create a new React application using Create React App: **npx create-react-app music-player**
++ Navigate to the Project Directory by changing into the project directory using this command: **cd music-player**
++ Replace the contents of the src directory in your new React application with the contents of the src directory from your music player application.
++ Install Dependencies by using **npm install**
++ Run the Application with **npm start**
