@@ -1,0 +1,85 @@
+.uploadContainer{
+    display: flex;
+    align-items: center;
+    /* flex-direction: column-reverse; */
+    justify-content: space-evenly;
+    margin: 300px 0 0 0;
+    gap: 20px;
+}
+.uploadContainer input{
+    width: 10vw;
+    height: 3vw;
+    cursor: pointer;
+    font-size: 1vw;
+}
+
+.uploadContainer button{
+    border-radius: 8px;
+    width: 9vw;
+    height: 2.5vw;
+    cursor: pointer;
+    font-size: 1.2vw;
+    font-weight: 600;
+    position: relative;
+    bottom: 10px;
+}
+
+
+/* @media style */
+
+@media(max-width: 1200px){
+    .uploadContainer input{
+        width: 13vw;
+        height: 3.3vw;
+        font-size: 1.3vw;
+    }
+    
+    .uploadContainer button{
+        width: 11vw;
+        height: 3.3vw;
+        font-size: 1.5vw;
+    }
+}
+
+@media(max-width: 992px){
+    .uploadContainer input{
+        width: 18vw;
+        height: 4vw;
+        font-size: 1.5vw;
+    }
+    
+    .uploadContainer button{
+        width: 15vw;
+        height: 3.8vw;
+        font-size: 1.9vw;
+        font-weight: 600;
+    }
+}
+
+@media(max-width: 768px){
+    .uploadContainer input{
+        width: 22vw;
+        height: 4vw;
+        font-size: 2vw;
+    }
+    
+    .uploadContainer button{
+        width: 18vw;
+        height: 5vw;
+        font-size: 2.3vw;
+    }
+}
+
+@media(max-width: 768px){
+    .uploadContainer input{
+        width: 26vw;
+        height: 4vw;
+        font-size: 2.7vw;
+    }
+    
+    .uploadContainer button{
+        width: 22vw;
+        height: 6vw;
+        font-size: 2.8vw;
+    }
+}

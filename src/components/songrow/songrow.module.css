@@ -1,0 +1,207 @@
+/* songrow style */
+
+.songRowsBlock{
+  width: 100%;
+  height: 50px;
+}
+.songRows{
+  border-bottom: 1px solid;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  font-size: 1.3vw;
+  font-weight: 600;
+}
+
+.songRows>.songName{
+  text-align: left;
+  width: 15%;
+  position: relative;
+  left: 7vw;
+}
+
+.songRows>.songName:hover{
+  color: #6C6892;
+}
+
+.songRows>.artistName{
+  text-align: left;
+  width: 15%;
+  position: relative;
+  left: 16.2vw;
+}
+
+.songRows>.artistName:hover{
+  color: #6C6892;
+}
+
+.songRows>.trackNumber{
+  text-align: left;
+  width: 15%;
+  position: relative;
+  left: 25.7vw;
+}
+
+.songRows> .icons{
+  width: 3%;
+  position: relative;
+  left: 27vw;
+  cursor: pointer;
+}
+
+.favorit {
+  user-select: none;
+  width: 1.2rem;
+  height: 1.2em;
+  display: inline-block;
+  fill: currentColor;
+  flex-shrink: 0;
+  transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  font-size: 1.5rem;
+}
+.keyboardarr{
+  user-select: none;
+  width: 2.2rem;
+  height: 2.2em;
+  display: inline-block;
+  fill: currentColor;
+  flex-shrink: 0;
+  transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  font-size: 1rem;
+}
+
+.songRows>.trackNumber:hover{
+  color: #6C6892;
+}
+
+.play{
+  margin-top: 11px;
+  cursor: pointer;
+}
+
+.pause{
+  margin-top: 11px;
+  cursor: pointer;
+}
+
+.songRowsBlock button{
+  border: none;
+  background-color: transparent;
+}
+
+
+/* @media style */
+
+@media(max-width: 1200px){
+  .songRows{
+    font-size: 1.8vw;
+    font-weight: 600;
+  }
+
+  .songRows>.artistName{
+    position: relative;
+    left: 20.5vw;
+  }
+
+  .songRows>.songName{
+    position: relative;
+    left: 9vw;
+  }
+
+  .songRows>.icons{
+    position: relative;
+    left: 35vw;
+  }
+  
+  .songRows>.trackNumber{
+    position: relative;
+    left: 33vw;
+  }
+
+}
+
+@media (max-width: 992px){
+  .songRows{
+    font-size: 2vw;
+    font-weight: 600;
+  }
+
+  .songRows>.artistName{
+    position: relative;
+    left: 20.5vw;
+  }
+
+  .songRows>.songName{
+    position: relative;
+    left: 6vw;
+  }
+
+  .songRows>.icons{
+    position: relative;
+    left: 35vw;
+  }
+  
+  .songRows>.trackNumber{
+    position: relative;
+    left: 33vw;
+  }
+}
+
+@media (max-width: 768px){
+  .songRows{
+    font-size: 2.3vw;
+    font-weight: 600;
+  }
+
+  .songRows>.artistName{
+    position: relative;
+    left: 18vw;
+  }
+
+  .songRows>.songName{
+    position: relative;
+    left: 5vw;
+  }
+
+  .songRows>.icons{
+    width: 3.3%;
+    position: relative;
+    left: 33vw;
+  }
+  
+  .songRows>.trackNumber{
+    position: relative;
+    left: 32vw;
+  }
+  
+}
+
+
+@media(max-width: 618px){
+  .songRows{
+    font-size: 2.6vw;
+    font-weight: 500;
+  }
+
+  .songRows>.artistName{
+    position: relative;
+    left: 15w;
+  }
+  
+  .songRows>.trackNumber{
+    position: relative;
+    left: 30.2vw;
+  }
+
+  .songRows>.songName{
+    position: relative;
+    left: 2vw;
+  }
+
+  .songRows>.icons{
+    width: 3.8%;
+    position: relative;
+    left: 30.2vw;
+  }
+  
+}

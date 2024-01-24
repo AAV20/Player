@@ -1,0 +1,55 @@
+/* songlist style */
+
+.songlistContainer{
+    width: 95%;
+    height: 70px;
+    background-color: #EEEEEE;
+    margin: auto;
+}
+
+.songlistContent{
+    width: 85%;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.line{
+    width: 5px;
+    height: 70px;
+    background:#FEFEFE;
+}
+
+.songlistContent h2{
+    color: #6C6866;
+    position: relative;
+    font-size: 1.4vw;
+}
+
+/* @media style */
+
+@media (max-width: 1200px){
+    .songlistContent h2{
+        font-size: 1.8vw;
+    }
+}
+
+@media (max-width: 992px){
+    .songlistContent h2{
+        font-size: 2.2vw;
+        position: relative;
+        left: -20px;
+    }
+}
+
+@media (max-width: 992px){
+    .songlistContent h2{
+        font-size: 2.8vw;
+    }
+}
+
+@media (max-width: 618px){
+    .songlistContent h2{
+        font-size: 3vw;
+    }
+}
